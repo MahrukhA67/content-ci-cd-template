@@ -111,8 +111,8 @@ jobs:
       - name: Upload Packs to Artifacts Server
         env:
           REF: ${{ github.ref }}
-          DEMISTO_BASE_URL: ${{ secrets.DEMISTO_BASE_URL }}
-          DEMISTO_API_KEY: ${{ secrets.DEMISTO_API_KEY }}
+          DEMISTO_BASE_URL: ${{ secrets.DEMISTO_BASE_URL}}
+          DEMISTO_API_KEY: ${{ secrets.DEMISTO_API_KEY}}
         run : |
           if [ $PACKS_CHANGED ]; then
             BRANCH_NAME=${REF#refs/heads/}
