@@ -16,7 +16,7 @@ jobs:
       - name: Content checkout
         uses: actions/checkout@v2
         with:
-          repository: dooyulkim/content
+          repository: demisto/content
           path: content
       - name: Setup Python
         uses: actions/setup-python@v2
